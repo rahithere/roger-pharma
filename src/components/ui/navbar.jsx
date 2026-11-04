@@ -9,9 +9,16 @@ import { useState } from "react";
 
 
 const products = [
-    { name: "Product One", href: "/products/product-one" },
-    { name: "Product Two", href: "/products/product-two" },
-    { name: "Product Three", href: "/products/product-three" },
+    { name: "Injectables", href: "/injectables" },
+    { name: "Tablets", href: "/tablets" },
+    { name: "PCT & Hormone Support", href: "/pct" },
+    { name: "SARMS", href: "/sarms" },
+    { name: "Peptides", href: "/peptides" },
+    { name: "Oral Peptides", href: "/oral-peptides" },
+    { name: "Performance & Wellness", href: "/performance-wellness" },
+    { name: "Reconstitutor", href: "/reconstitutor" },
+    { name: "Nasal Spray Peptides", href: "/nasal-spray-peptides" },
+    { name: "Transdermal Patches", href: "/transdermal-patches" },
 ];
 
 const moreLinks = [
@@ -71,8 +78,7 @@ export default function Navbar() {
                     {/* PRODUCTS DROPDOWN */}
                     <div className="group relative py-5">
 
-                        <Link
-                            href="/products"
+                        <span
                             className={navStyle("/products")}
                         >
                             PRODUCTS
@@ -82,11 +88,14 @@ export default function Navbar() {
                                 strokeWidth={2}
                                 className="transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180"
                             />
-                        </Link>
+                        </span>
 
                         <div className={dropdownStyle}>
                             {products.map((product) => (
                                 <Link
+                                    onClick={(e) => {
+                                        e.currentTarget.blur();
+                                    }}
                                     key={product.href}
                                     href={product.href}
                                     className={dropdownLinkStyle}
@@ -117,6 +126,9 @@ export default function Navbar() {
                         <div className={dropdownStyle}>
                             {moreLinks.map((item) => (
                                 <Link
+                                    onClick={(e) => {
+                                        e.currentTarget.blur();
+                                    }}
                                     key={item.href}
                                     href={item.href}
                                     className={dropdownLinkStyle}
@@ -149,135 +161,137 @@ export default function Navbar() {
             </nav>
 
 
-            {isOpen && (
-                <div className="absolute left-0 top-full z-50 w-full border-t border-[#E5E5E5] bg-white px-6 py-6 md:hidden">
+            {
+                isOpen && (
+                    <div className="absolute left-0 top-full z-50 w-full border-t border-[#E5E5E5] bg-white px-6 py-6 md:hidden">
 
-                    <div className="flex flex-col gap-6">
+                        <div className="flex flex-col gap-6">
 
-                        {/* HOME */}
-                        <Link
-                            href="/"
-                            onClick={() => setIsOpen(false)}
-                            className="font-body text-sm"
-                        >
-                            HOME
-                        </Link>
-
-                        {/* PRODUCTS */}
-                        <div>
-
-                            <button
-                                onClick={() =>
-                                    setActiveDropdown(
-                                        activeDropdown === "products" ? null : "products"
-                                    )
-                                }
-                                className="flex w-full items-center justify-between font-body text-sm"
-                                aria-expanded={activeDropdown === "products"}
+                            {/* HOME */}
+                            <Link
+                                href="/"
+                                onClick={() => setIsOpen(false)}
+                                className="font-body text-sm"
                             >
-                                PRODUCTS
+                                HOME
+                            </Link>
 
-                                <ChevronDown
-                                    size={16}
-                                    strokeWidth={2}
-                                    className={`transition-transform duration-300 ${activeDropdown === "products" ? "rotate-180" : ""
+                            {/* PRODUCTS */}
+                            <div>
+
+                                <button
+                                    onClick={() =>
+                                        setActiveDropdown(
+                                            activeDropdown === "products" ? null : "products"
+                                        )
+                                    }
+                                    className="flex w-full items-center justify-between font-body text-sm"
+                                    aria-expanded={activeDropdown === "products"}
+                                >
+                                    PRODUCTS
+
+                                    <ChevronDown
+                                        size={16}
+                                        strokeWidth={2}
+                                        className={`transition-transform duration-300 ${activeDropdown === "products" ? "rotate-180" : ""
+                                            }`}
+                                    />
+                                </button>
+
+                                <div
+                                    className={`grid transition-all duration-300 ease-in-out ${activeDropdown === "products"
+                                        ? "grid-rows-[1fr] opacity-100 mt-4"
+                                        : "grid-rows-[0fr] opacity-0 mt-0"
                                         }`}
-                                />
-                            </button>
-
-                            <div
-                                className={`grid transition-all duration-300 ease-in-out ${activeDropdown === "products"
-                                    ? "grid-rows-[1fr] opacity-100 mt-4"
-                                    : "grid-rows-[0fr] opacity-0 mt-0"
-                                    }`}
-                            >
-                                <div className="overflow-hidden">
-                                    <div className="flex flex-col gap-4 border-l border-[#E5E5E5] pl-4">
-                                        {products.map((product) => (
-                                            <Link
-                                                key={product.href}
-                                                href={product.href}
-                                                onClick={() => {
-                                                    setIsOpen(false);
-                                                    setActiveDropdown(null);
-                                                }}
-                                                className="font-body text-sm text-gray-500 hover:text-[#54B2E5] transition-colors"
-                                            >
-                                                {product.name}
-                                            </Link>
-                                        ))}
+                                >
+                                    <div className="overflow-hidden">
+                                        <div className="flex flex-col gap-4 border-l border-[#E5E5E5] pl-4">
+                                            {products.map((product) => (
+                                                <Link
+                                                    key={product.href}
+                                                    href={product.href}
+                                                    onClick={() => {
+                                                        setIsOpen(false);
+                                                        setActiveDropdown(null);
+                                                    }}
+                                                    className="font-body text-sm text-gray-500 hover:text-[#54B2E5] transition-colors"
+                                                >
+                                                    {product.name}
+                                                </Link>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
 
-                        </div>
+                            {/* MORE */}
+                            <div>
 
-                        {/* MORE */}
-                        <div>
+                                <button
+                                    onClick={() =>
+                                        setActiveDropdown(
+                                            activeDropdown === "more" ? null : "more"
+                                        )
+                                    }
+                                    className="flex w-full items-center justify-between font-body text-sm"
+                                    aria-expanded={activeDropdown === "more"}
+                                >
+                                    MORE
 
-                            <button
-                                onClick={() =>
-                                    setActiveDropdown(
-                                        activeDropdown === "more" ? null : "more"
-                                    )
-                                }
-                                className="flex w-full items-center justify-between font-body text-sm"
-                                aria-expanded={activeDropdown === "more"}
-                            >
-                                MORE
+                                    <ChevronDown
+                                        size={16}
+                                        strokeWidth={2}
+                                        className={`transition-transform duration-300 ${activeDropdown === "more" ? "rotate-180" : ""
+                                            }`}
+                                    />
+                                </button>
 
-                                <ChevronDown
-                                    size={16}
-                                    strokeWidth={2}
-                                    className={`transition-transform duration-300 ${activeDropdown === "more" ? "rotate-180" : ""
+                                <div
+                                    className={`grid transition-all duration-300 ease-in-out ${activeDropdown === "more"
+                                        ? "grid-rows-[1fr] opacity-100 mt-4"
+                                        : "grid-rows-[0fr] opacity-0 mt-0"
                                         }`}
-                                />
-                            </button>
-
-                            <div
-                                className={`grid transition-all duration-300 ease-in-out ${activeDropdown === "more"
-                                    ? "grid-rows-[1fr] opacity-100 mt-4"
-                                    : "grid-rows-[0fr] opacity-0 mt-0"
-                                    }`}
-                            >
-                                <div className="overflow-hidden">
-                                    <div className="flex flex-col gap-4 border-l border-[#E5E5E5] pl-4">
-                                        {moreLinks.map((item) => (
-                                            <Link
-                                                key={item.href}
-                                                href={item.href}
-                                                onClick={() => {
-                                                    setIsOpen(false);
-                                                    setActiveDropdown(null);
-                                                }}
-                                                className="font-body text-sm text-gray-500 hover:text-[#54B2E5] transition-colors"
-                                            >
-                                                {item.name}
-                                            </Link>
-                                        ))}
+                                >
+                                    <div className="overflow-hidden">
+                                        <div className="flex flex-col gap-4 border-l border-[#E5E5E5] pl-4">
+                                            {moreLinks.map((item) => (
+                                                <Link
+                                                    key={item.href}
+                                                    href={item.href}
+                                                    onClick={() => {
+                                                        setIsOpen(false);
+                                                        setActiveDropdown(null);
+                                                    }}
+                                                    className="font-body text-sm text-gray-500 hover:text-[#54B2E5] transition-colors"
+                                                >
+                                                    {item.name}
+                                                </Link>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
 
+                            {/* CTA */}
+                            <Button
+                                variant="primary"
+                                href="/contact"
+                                className="w-full"
+                                onClick={() => {
+                                    setIsOpen(false);
+                                    setActiveDropdown(null);
+                                }}
+                            >
+                                GET IN TOUCH
+                            </Button>
+
                         </div>
-
-                        {/* CTA */}
-                        <Button
-                            variant="primary"
-                            href="/contact"
-                            className="w-full"
-                            onClick={() => {
-                                setIsOpen(false);
-                                setActiveDropdown(null);
-                            }}
-                        >
-                            GET IN TOUCH
-                        </Button>
-
                     </div>
-                </div>
-            )}
+                )
+            }
 
-        </header>
+        </header >
     );
 }
