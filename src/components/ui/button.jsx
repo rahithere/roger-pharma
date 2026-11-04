@@ -4,6 +4,7 @@ export default function Button({
     children,
     variant = "primary",
     hoverTextBlack = false,
+    addArrow = true,
     className = "",
     href,
     ...props
@@ -30,7 +31,7 @@ export default function Button({
         return (
             <a href={href} className={styles} {...props}>
                 {children}
-                <ArrowComponent />
+                {addArrow && (<ArrowComponent />)}
             </a>
         );
     }
@@ -38,7 +39,7 @@ export default function Button({
     return (
         <button className={styles} {...props}>
             {children}
-            <ArrowComponent />
+            {addArrow && (<ArrowComponent />)}
         </button>
     );
 }

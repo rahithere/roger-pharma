@@ -17,7 +17,7 @@ export default function Footer() {
         email: ""
     })
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         //handle what to do with contact data
     }
