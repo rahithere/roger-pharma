@@ -15,7 +15,7 @@ const products = [
 ];
 
 const moreLinks = [
-    { name: "Product Authentication", href: "/product-authentication" },
+    { name: "Product Authentication", href: "/trustkey" },
     { name: "Partner Program", href: "/partner-program" },
     { name: "Heat Safe", href: "/heat-safe" },
 ];
