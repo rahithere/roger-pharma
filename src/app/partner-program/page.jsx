@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ChevronRight, Mail } from 'lucide-react'
 import { useState } from "react";
 import Button from "@/components/ui/button"
+import axios from "axios";
 const page = () => {
 
     const [userData, setUserData] = useState({
@@ -13,11 +14,34 @@ const page = () => {
         message: ""
     })
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const [message, SetMessage] = useState("")
+    const [apiError, setApiError] = useState("")
 
     const handleFormSubmit = async (e) => {
         e.preventDefault()
         //todo: send data to backend
         console.log(userData)
+
+        const { fullName, wpNumber, countryState, message } = userData
+        try {
+            isSubmitting(true)
+            const response = await axios.post('/api/partner-program', {
+                fullName,
+                wpNumber,
+                countryState,
+                message
+            })
+
+            SetMessage(response.data.message)
+        } catch (error) {
+            console.error("Failed to send data")
+            setApiError(error?.response?.data?.message || "Failed to send data")
+        } finally {
+            isSubmitting(false)
+        }
+
+
+
         e.currentTarget.reset();
     }
 
@@ -135,6 +159,18 @@ const page = () => {
                             <Button addArrow={false} hoverTextBlack={true} className={"w-fit px-8 py-4 text-white hover:text-white hover:bg-black"} type={"submit"}>SEND MESSAGE</Button>
 
                         </form>
+
+                        {message && (
+                            <p className="py-4 px-2 mt-2 text-sm text-green-600">
+                                {message}
+                            </p>
+                        )}
+
+                        {apiError && (
+                            <p className="py-4 px-2 mt-3 text-sm text-red-600">
+                                {apiError}
+                            </p>
+                        )}
 
                     </div>
 
