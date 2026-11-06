@@ -1,4 +1,4 @@
-[
+export const verificationCodes = [
     {
         "code": "RGR-2026-001",
         "name": "Roger Product A",

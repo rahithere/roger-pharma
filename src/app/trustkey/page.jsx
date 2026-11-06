@@ -2,19 +2,32 @@
 
 
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Loader2 } from "lucide-react";
 import { useState } from "react";
 import Button from "@/components/ui/button"
+import axios from "axios";
 const page = () => {
     const [productCode, setProductCode] = useState({
         code: ""
     })
     const [isSubmitting, setIsSubmitting] = useState(false)
-    const [error, setError] = useState("")
+    const [apiError, setApiError] = useState("")
+    const [message, setMessage] = useState("")
 
     const handleCodeSubmit = async (e) => {
         e.preventDefault()
-        // todo call backend for data verification
+
+        try {
+            setIsSubmitting(true)
+            const response = await axios.post('/api/trustkey-verify', { uniqueKey: productCode.code })
+            console.log(response)
+            setMessage(response.data.message)
+        } catch (error) {
+            console.error("Failed to send the data: ", error.response.data.message)
+            setApiError(error.response.data.message)
+        } finally {
+            setIsSubmitting(false)
+        }
     }
 
     return (
@@ -86,12 +99,25 @@ const page = () => {
 
                         <button
                             type="submit"
-                            className="w-full rounded-xl bg-[#54B2E5] px-5 py-4 font-body text-lg font-medium uppercase text-white transition-colors duration-300 hover:bg-[#399CCF]"
+                            className={`w-full rounded-xl bg-[#54B2E5] px-5 py-4 font-body text-lg font-medium uppercase text-white transition-colors duration-300  flex justify-center items-center ${productCode.code.trim() === "" ? "bg-gray-500" : "bg-[#54B2E5] hover:bg-[#399CCF]"}`}
+                            disabled={productCode.code.trim() === ""}
                         >
-                            VERIFY PRODUCT
+                            {isSubmitting ? <Loader2 className="" /> : "VERIFY PRODUCT"}
                         </button>
 
                     </form>
+                    {message && (
+                        <p className="mt-3 text-center text-sm text-green-600">
+                            {message}
+                        </p>
+                    )}
+                    {
+                        apiError && (
+                            <p className="mt-2 text-center text-sm text-red-600">
+                                {apiError}
+                            </p>
+                        )
+                    }
                 </div>
             </section>
         </>
