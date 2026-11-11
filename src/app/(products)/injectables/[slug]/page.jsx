@@ -100,17 +100,16 @@ export default async function ProductPage({ params }) {
                 <section className="mb-16 md:mb-20">
 
                     <h2 className="font-heading text-2xl font-medium uppercase md:text-3xl">
-                        WHAT ARE THE BENIFITS?
+                        WHAT ARE THE BENEFITS?
                     </h2>
 
                     <p className="mt-5 text-base leading-7 md:text-lg">
-                        {product.benifits.desc}
-                        benifit description
+                        {product.benefits.desc}
                     </p>
 
                     <ul className="mt-6 list-disc space-y-3 pl-6 text-base leading-7 md:text-lg md:leading-8">
 
-                        {product.benifits.items.map((item, index) => (
+                        {product.benefits.items.map((item, index) => (
                             <li key={index} className="list-none">
                                 {index + 1}. {item}
                             </li>

@@ -17,7 +17,7 @@ export const maxesterone = {
 
     dosage: "The doctor will tell you how much dosage is required for your body. Usually, 400 mg of this blend is injected after every 2 weeks and this is the maximum dosage to see the results.",
 
-    benifits: {
+    benefits: {
         desc: "You may enjoy the following benefits after using the MAXESTERONE-400™:",
         items: [
             "It will help in increasing your muscle size",

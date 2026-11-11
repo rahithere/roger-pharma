@@ -17,7 +17,7 @@ export const cypiosterone = {
 
     dosage: "CYPIOSTERONE-250™️ has a half life of 7-8 days. For males, the appropriate dose is 250-1000mg. Meanwhile, in women, the suggested dosage is 25-100mg. Both are delivered by intramuscular injection. The average cycle length is 4-12 weeks, following an ED, EOD, ETD or EFD injection pattern. \n Dosage is usually based on any medical conditions you have, your testosterone blood levels, and response to treatment. This product should not be injected into the vein.",
 
-    benifits: {
+    benefits: {
         desc: "You may enjoy the following benefits after using the MAXESTERONE-400™:",
         items: [
             "May influence muscle development and body composition in adults.",

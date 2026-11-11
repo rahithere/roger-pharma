@@ -17,7 +17,7 @@ export const acebolone = {
 
     dosage: "It is typically prescribed at 100-300 mg per week, in a cycle for no more than 6-8 weeks. For oral use, the effective dose is much higher—100–200 mg a day—but you shouldn’t take it for more than 6–8 weeks. These doses are enough to cause a strong increase in lean body mass with good sculpting, hardness, and shape.",
 
-    benifits: {
+    benefits: {
         desc: "You may enjoy the following benefits after using the MAXESTERONE-400™:",
         items: [
             "It makes muscles take in more ammonium ions and speeds up protein synthesis. It also makes you hungrier while slowing down catabolism.",
