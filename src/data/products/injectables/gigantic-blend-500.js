@@ -4,10 +4,10 @@ export const giganticBlend = {
     name: "GIGANTIC BLEND-500",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/giganticBlend/hero.png",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/giganticBlend/s1.png",
+            "/images/products/injectables/giganticBlend/s2.png"
         ]
     },
 

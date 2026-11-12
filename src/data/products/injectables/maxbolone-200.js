@@ -4,10 +4,10 @@ export const maxbolone = {
     name: "MAXBOLONE-200",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/maxbolone/hero.jpg",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/maxbolone/s1.jpg",
+            "/images/products/injectables/maxbolone/s2.jpg"
         ]
     },
 

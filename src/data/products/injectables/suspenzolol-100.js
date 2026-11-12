@@ -4,10 +4,10 @@ export const suspenzolol = {
     name: "SUSPENZOLOL-100",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/suspenzolol/hero.jpg",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/suspenzolol/s1.jpg",
+            "/images/products/injectables/suspenzolol/s2.jpg"
         ]
     },
 

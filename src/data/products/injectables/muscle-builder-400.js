@@ -4,10 +4,10 @@ export const muscleBuilder400 = {
     name: "MUSCLE BUILDER-400",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/muscleBuilder400/hero.jpg",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/muscleBuilder400/s1.jpg",
+            "/images/products/injectables/muscleBuilder400/s2.jpg"
         ]
     },
 

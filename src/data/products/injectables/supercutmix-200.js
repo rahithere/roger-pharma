@@ -4,10 +4,10 @@ export const supercutmix = {
     name: "SUPERCUTMIX-200",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/supercutmix/hero.jpg",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/supercutmix/s1.jpg",
+            "/images/products/injectables/supercutmix/s2.jpg"
         ]
     },
 

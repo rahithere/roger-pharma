@@ -4,10 +4,10 @@ export const enanesterone = {
     name: "ENANESTERONE-250",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/enanesterone/hero.png",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/enanesterone/s1.png",
+            "/images/products/injectables/enanesterone/s2.png"
         ]
     },
 

@@ -4,10 +4,10 @@ export const undecylenone250 = {
     name: "UNDECYLENONE-250",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/undecylenone250/hero.jpg",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/undecylenone250/s1.jpg",
+            "/images/products/injectables/undecylenone250/s2.jpg"
         ]
     },
 

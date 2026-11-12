@@ -4,10 +4,10 @@ export const heliosPlus = {
     name: "HELIOS PLUS+",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/heliosPlus/hero.jpg",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/heliosPlus/s1.jpg",
+            "/images/products/injectables/heliosPlus/s2.jpg"
         ]
     },
 

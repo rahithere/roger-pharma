@@ -4,10 +4,10 @@ export const stanoil = {
     name: "STANOIL-50",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/stanoil/hero.png",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/stanoil/s1.png",
+            "/images/products/injectables/stanoil/s2.png"
         ]
     },
 

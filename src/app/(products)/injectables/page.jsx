@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ChevronRight } from 'lucide-react'
-
+import { injectables } from '@/data/products/injectables'
 const page = () => {
     return (
         <>
@@ -36,6 +37,34 @@ const page = () => {
 
                     </div>
 
+                </div>
+            </section>
+
+            <section className="w-full px-4 py-12 md:px-8 lg:px-12">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    {injectables.map((product) => (
+                        <Link
+                            key={product.id}
+                            href={`/injectables/${product.slug}`}
+                            className="group block"
+                        >
+                            {/* Product Image */}
+                            <div className="relative w-full aspect-square overflow-hidden">
+                                <Image
+                                    src={product.images.hero}
+                                    alt={product.name}
+                                    fill
+                                    sizes="(max-width: 1024px) 100vw, 33vw"
+                                    className="object-contain transition-transform duration-300 group-hover:scale-105"
+                                />
+                            </div>
+
+                            {/* Product Title */}
+                            <h2 className="mt-4 text-center text-lg font-base">
+                                {product.name}
+                            </h2>
+                        </Link>
+                    ))}
                 </div>
             </section>
         </>

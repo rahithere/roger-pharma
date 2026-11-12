@@ -4,10 +4,10 @@ export const hexabolone = {
     name: "HEXABOLONE-76.5",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/hexabolone/hero.png",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/hexabolone/s1.jpg",
+            "/images/products/injectables/hexabolone/s2.jpg"
         ]
     },
 

@@ -36,138 +36,180 @@ export default async function ProductPage({ params }) {
             <div className="mx-auto max-w-6xl px-5 py-16 md:px-8 md:py-20 lg:py-24">
 
                 {/* PRODUCT HERO IMAGE */}
-                <section className="mb-16 md:mb-20">
 
-                    <div className="relative mx-auto aspect-[16/10] w-full max-w-3xl overflow-hidden">
+                {product.images.hero.trim() !== "" ?
+                    (<section className="mb-16 md:mb-20">
 
-                        <Image
-                            src={product.images.hero}
-                            alt={product.name}
-                            fill
-                            priority
-                            sizes="(max-width: 768px) 100vw, 768px"
-                            className="object-contain"
-                        />
+                        <div className="relative mx-auto aspect-[16/10] w-full max-w-3xl overflow-hidden">
 
-                    </div>
+                            <Image
+                                src={product.images.hero}
+                                alt={product.name}
+                                fill
+                                priority
+                                sizes="(max-width: 768px) 100vw, 768px"
+                                className="object-contain"
+                            />
 
-                </section>
+                        </div>
+
+                    </section>)
+                    :
+                    null
+                }
+
 
 
                 {/* PRODUCT OVERVIEW */}
-                <section className="mb-16 bg-[#F0F8FF] p-6 md:mb-20 md:p-10 lg:p-12">
 
-                    <h2 className="font-heading text-2xl font-medium uppercase md:text-3xl">
-                        PRODUCT OVERVIEW!
-                    </h2>
+                {product.overview.trim() !== "" ?
+                    (
+                        <section className="mb-16 bg-[#F0F8FF] p-6 md:mb-20 md:p-10 lg:p-12">
 
-                    <p className="mt-6 text-base leading-7 text-black md:mt-8 md:text-lg md:leading-9">
-                        {product.overview}
-                    </p>
+                            <h2 className="font-heading text-2xl font-medium uppercase md:text-3xl">
+                                PRODUCT OVERVIEW!
+                            </h2>
 
-                </section>
+                            <p className="mt-6 text-base leading-7 text-black md:mt-8 md:text-lg md:leading-9">
+                                {product.overview}
+                            </p>
+
+                        </section>
+                    )
+                    : null}
 
 
                 {/* HOW DOES IT WORK */}
-                <section className="mb-16 md:mb-20">
 
-                    <h2 className="font-heading text-2xl font-medium uppercase md:text-3xl">
-                        HOW DOES IT WORK?
-                    </h2>
+                {product.howDoesItWork.trim() !== "" ?
+                    (<section className="mb-16 md:mb-20">
 
-                    <p className="mt-6 text-base leading-7 text-black md:mt-8 md:text-lg md:leading-9">
-                        {product.howDoesItWork}
-                    </p>
+                        <h2 className="font-heading text-2xl font-medium uppercase md:text-3xl">
+                            HOW DOES IT WORK?
+                        </h2>
 
-                </section>
+                        <p className="mt-6 text-base leading-7 text-black md:mt-8 md:text-lg md:leading-9">
+                            {product.howDoesItWork}
+                        </p>
+
+                    </section>)
+                    : null}
+
+
 
 
                 {/* USAGE AND DOSAGE */}
-                <section className="mb-16 md:mb-20">
 
-                    <h2 className="font-heading text-2xl font-medium uppercase md:text-3xl">
-                        PROPER USAGE AND DOSAGE
-                    </h2>
+                {product.dosage.trim() !== "" ?
+                    (
+                        <section className="mb-16 md:mb-20">
 
-                    <p className="mt-6 text-base leading-7 text-black md:mt-8 md:text-lg md:leading-9">
-                        {product.dosage}
-                    </p>
+                            <h2 className="font-heading text-2xl font-medium uppercase md:text-3xl">
+                                PROPER USAGE AND DOSAGE
+                            </h2>
 
-                </section>
+                            <p className="mt-6 text-base leading-7 text-black md:mt-8 md:text-lg md:leading-9">
+                                {product.dosage}
+                            </p>
+
+                        </section>
+                    )
+                    : null}
+
+
 
 
                 {/* BENEFITS */}
-                <section className="mb-16 md:mb-20">
 
-                    <h2 className="font-heading text-2xl font-medium uppercase md:text-3xl">
-                        WHAT ARE THE BENEFITS?
-                    </h2>
+                {product.benefits.desc.trim() !== "" ?
+                    (<section className="mb-16 md:mb-20">
 
-                    <p className="mt-5 text-base leading-7 md:text-lg">
-                        {product.benefits.desc}
-                    </p>
+                        <h2 className="font-heading text-2xl font-medium uppercase md:text-3xl">
+                            WHAT ARE THE BENEFITS?
+                        </h2>
 
-                    <ul className="mt-6 list-disc space-y-3 pl-6 text-base leading-7 md:text-lg md:leading-8">
+                        <p className="mt-5 text-base leading-7 md:text-lg">
+                            {product.benefits.desc}
+                        </p>
 
-                        {product.benefits.items.map((item, index) => (
-                            <li key={index} className="list-none">
-                                {index + 1}. {item}
-                            </li>
-                        ))}
+                        <ul className="mt-6 list-disc space-y-3 pl-6 text-base leading-7 md:text-lg md:leading-8">
 
-                    </ul>
+                            {product.benefits.items.map((item, index) => (
+                                <li key={index} className="list-none">
+                                    {index + 1}. {item}
+                                </li>
+                            ))}
 
-                </section>
+                        </ul>
+
+                    </section>)
+                    : null}
+
+
 
 
                 {/* SECONDARY PRODUCT IMAGES */}
-                <section className="mb-16 md:mb-20">
 
-                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8">
+                {product.images.secondary?.some(Boolean) ?
+                    (
+                        <section className="mb-16 md:mb-20">
 
-                        {product.images.secondary.map((image, index) => (
+                            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8">
 
-                            <div
-                                key={image}
-                                className="relative aspect-[4/3] w-full overflow-hidden"
-                            >
+                                {product.images.secondary.map((image, index) => (
 
-                                <Image
-                                    src={image}
-                                    alt={`${product.name} product view ${index + 1}`}
-                                    fill
-                                    sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 560px"
-                                    loading="lazy"
-                                    className="object-contain"
-                                />
+                                    <div
+                                        key={image}
+                                        className="relative aspect-[4/3] w-full overflow-hidden"
+                                    >
+
+                                        <Image
+                                            src={image}
+                                            alt={`${product.name} product view ${index + 1}`}
+                                            fill
+                                            sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 560px"
+                                            loading="lazy"
+                                            className="object-contain"
+                                        />
+
+                                    </div>
+
+                                ))}
 
                             </div>
 
-                        ))}
+                        </section>
 
-                    </div>
+                    )
+                    : null}
 
-                </section>
 
 
                 {/* SIDE EFFECTS */}
-                <section className="mb-10">
 
-                    <h2 className="font-heading text-2xl font-medium uppercase md:text-3xl">
-                        SIDE EFFECTS
-                    </h2>
+                {product.sideEffects?.some(Boolean) ?
+                    (
+                        <section className="mb-10">
 
-                    <ul className="mt-6 list-disc space-y-3 pl-6 text-base leading-7 md:text-lg md:leading-8">
+                            <h2 className="font-heading text-2xl font-medium uppercase md:text-3xl">
+                                SIDE EFFECTS
+                            </h2>
 
-                        {product.sideEffects.map((effect, index) => (
-                            <li key={index} className="list-none">
-                                {index + 1}. {effect}
-                            </li>
-                        ))}
+                            <ul className="mt-6 list-disc space-y-3 pl-6 text-base leading-7 md:text-lg md:leading-8">
 
-                    </ul>
+                                {product.sideEffects.map((effect, index) => (
+                                    <li key={index} className="list-none">
+                                        {index + 1}. {effect}
+                                    </li>
+                                ))}
 
-                </section>
+                            </ul>
+
+                        </section>
+                    ) : null}
+
+
+
 
             </div>
 

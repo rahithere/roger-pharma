@@ -4,10 +4,10 @@ export const lipoCardiacHelp = {
     name: "LIPO-CARDIAC-HELP-200™",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/lipoCardiacHelp/hero.jpg",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/lipoCardiacHelp/s1.jpg",
+            "/images/products/injectables/lipoCardiacHelp/s2.jpg"
         ]
     },
 

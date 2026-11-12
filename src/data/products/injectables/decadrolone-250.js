@@ -1,13 +1,13 @@
 export const decadrolone = {
-    id: "decadrolone",
-    slug: "decadrolone-400",
-    name: "DECADROLONE-400",
+    id: "decadrolone-250",
+    slug: "decadrolone-250",
+    name: "DECADROLONE-250",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/decadrolone/hero.jpg",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/decadrolone/s1.jpg",
+            "/images/products/injectables/decadrolone/s2.jpg"
         ]
     },
 

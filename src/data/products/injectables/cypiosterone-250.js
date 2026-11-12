@@ -4,10 +4,10 @@ export const cypiosterone = {
     name: "CYPIOSTERONE-250",
 
     images: {
-        hero: '',
+        hero: '/images/products/injectables/cypiosterone/hero.jpeg',
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/cypiosterone/s1.jpg",
+            "/images/products/injectables/cypiosterone/s2.jpg"
         ]
     },
 

@@ -4,10 +4,10 @@ export const propesterone = {
     name: "PROPESTERONE-100",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/propesterone/hero.jpg",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/propesterone/s1.jpg",
+            "/images/products/injectables/propesterone/s2.jpg"
         ]
     },
 

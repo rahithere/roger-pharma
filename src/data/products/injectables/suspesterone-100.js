@@ -4,10 +4,10 @@ export const suspesterone = {
     name: "SUSPESTERONE-100",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/suspesterone/hero.jpg",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/suspesterone/s1.jpg",
+            "/images/products/injectables/suspesterone/s2.jpg"
         ]
     },
 

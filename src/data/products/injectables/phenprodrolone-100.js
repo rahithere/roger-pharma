@@ -4,10 +4,10 @@ export const phenprodrolone = {
     name: "PHENPRODROLONE-100",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/phenprodrolone/hero.jpg",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/phenprodrolone/s1.jpg",
+            "/images/products/injectables/phenprodrolone/s2.jpg"
         ]
     },
 

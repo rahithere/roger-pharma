@@ -4,10 +4,10 @@ export const enanolone = {
     name: "ENANOLONE-100",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/enanolone/hero.png",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/enanolone/s1.png",
+            "/images/products/injectables/enanolone/s2.png"
         ]
     },
 
