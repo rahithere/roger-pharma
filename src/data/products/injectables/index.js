@@ -53,3 +53,7 @@ export const injectables = [
     trimForge400,
     supercutmix
 ];
+
+export const tablets = [
+
+]
