@@ -4,7 +4,7 @@ export const primeYohimbine = {
     name: "PRIME YOHIMBINE",
 
     images: {
-        hero: "/images/products/pct/primeYohimbine/hero.jpg",
+        hero: "/images/products/pct/primeYohimbine/hero.webp",
         secondary: ["/images/products/pct/primeYohimbine/s1.jpg", "/images/products/pct/primeYohimbine/s2.jpg"]
     },
 

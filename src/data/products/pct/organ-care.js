@@ -4,7 +4,7 @@ export const organCare = {
     name: "ORGAN CARE",
 
     images: {
-        hero: "/images/products/pct/organ-care/hero.jpg",
+        hero: "/images/products/pct/organCare/hero.webp",
         secondary: ["/images/products/pct/organ-care/s1.jpg", "/images/products/pct/organ-care/s2.jpg"]
     },
 

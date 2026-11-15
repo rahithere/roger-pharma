@@ -4,7 +4,7 @@ export const enclomifix = {
     name: "ENCLOMIFIX",
 
     images: {
-        hero: "/images/products/pct/enclomifix/hero.jpg",
+        hero: "/images/products/pct/enclomifix/hero.webp",
         secondary: [
             "/images/products/pct/enclomifix/s1.jpg",
             "/images/products/pct/enclomifix/s2.jpg",
