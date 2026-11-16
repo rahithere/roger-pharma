@@ -9,7 +9,7 @@ const usefulLinks = [
     { name: "Product Verification", href: "/trustkey" },
     { name: "Partner Program", href: "/partner-program" },
     { name: "Heat Safe", href: "/heat-safe" },
-    { name: "Contact", href: "/contact" },
+    { name: "Contact", href: "/partner-program" },
 ];
 
 export default function Footer() {

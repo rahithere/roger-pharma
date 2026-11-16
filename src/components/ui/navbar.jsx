@@ -144,7 +144,7 @@ export default function Navbar() {
 
                 {/* CTA */}
                 <div className="relative z-10 hidden md:block">
-                    <Button variant="primary" href="/contact">
+                    <Button variant="primary" href="/partner-program">
                         GET IN TOUCH
                     </Button>
                 </div>

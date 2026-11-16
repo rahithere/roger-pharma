@@ -34,7 +34,7 @@ export default function Hero() {
 
                         <Button
                             variant="secondary"
-                            href="/verify"
+                            href="/trustkey"
                             className="w-full sm:w-auto"
                         >
                             VERIFY TRUST KEY
@@ -133,7 +133,7 @@ export default function Hero() {
                     <Button
                         variant="primary"
                         hoverTextBlack={true}
-                        href="/verify"
+                        href="/trustkey"
                         className="mt-8"
                     >
                         TRUST KEY™ AUTHENTICATION
