@@ -4,10 +4,10 @@ export const nolvatrate = {
     name: "NOLVATRATE-20",
 
     images: {
-        hero: "/images/products/tablets/nolvatrate-20/hero.jpg",
+        hero: "/images/products/tablets/nolvatrate-20/hero.webp",
         secondary: [
-            "/images/products/tablets/nolvatrate-20/s1.jpg",
-            "/images/products/tablets/nolvatrate-20/s2.jpg"
+            "/images/products/tablets/nolvatrate-20/s1.webp",
+            "/images/products/tablets/nolvatrate-20/s2.webp"
         ]
     },
 

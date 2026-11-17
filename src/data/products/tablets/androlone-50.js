@@ -4,10 +4,10 @@ export const androlone = {
     name: "ANDROLONE-50",
 
     images: {
-        hero: "/images/products/tablets/androlone-50/hero.jpg",
+        hero: "/images/products/tablets/androlone-50/hero.webp",
         secondary: [
-            "/images/products/tablets/androlone-50/s1.jpg",
-            "/images/products/tablets/androlone-50/s2.jpg"
+            "/images/products/tablets/androlone-50/s1.webp",
+            "/images/products/tablets/androlone-50/s2.webp"
         ]
     },
 

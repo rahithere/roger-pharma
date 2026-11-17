@@ -4,10 +4,10 @@ export const clomitrate = {
     name: "CLOMITRATE-50",
 
     images: {
-        hero: "/images/products/tablets/clomitrate-50/hero.jpg",
+        hero: "/images/products/tablets/clomitrate-50/hero.webp",
         secondary: [
-            "/images/products/tablets/clomitrate-50/s1.jpg",
-            "/images/products/tablets/clomitrate-50/s2.jpg"
+            "/images/products/tablets/clomitrate-50/s1.webp",
+            "/images/products/tablets/clomitrate-50/s2.webp"
         ]
     },
 

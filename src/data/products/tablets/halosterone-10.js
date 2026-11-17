@@ -4,10 +4,10 @@ export const halosterone = {
     name: "HALOSTERONE-10",
 
     images: {
-        hero: "/images/products/tablets/halosterone-10/hero.jpg",
+        hero: "/images/products/tablets/halosterone-10/hero.webp",
         secondary: [
-            "/images/products/tablets/halosterone-10/s1.jpg",
-            "/images/products/tablets/halosterone-10/s2.jpg"
+            "/images/products/tablets/halosterone-10/s1.webp",
+            "/images/products/tablets/halosterone-10/s2.webp"
         ]
     },
 

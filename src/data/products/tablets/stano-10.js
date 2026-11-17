@@ -4,10 +4,10 @@ export const stano = {
     name: "STANO-10",
 
     images: {
-        hero: "/images/products/tablets/stano-10/hero.jpg",
+        hero: "/images/products/tablets/stano-10/hero.webp",
         secondary: [
-            "/images/products/tablets/stano-10/s1.jpg",
-            "/images/products/tablets/stano-10/s2.jpg"
+            "/images/products/tablets/stano-10/s1.webp",
+            "/images/products/tablets/stano-10/s2.webp"
         ]
     },
 

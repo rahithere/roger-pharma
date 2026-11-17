@@ -4,10 +4,10 @@ export const cytodium = {
     name: "CYTODIUM-25",
 
     images: {
-        hero: "/images/products/tablets/cytodium-25/hero.jpg",
+        hero: "/images/products/tablets/cytodium-25/hero.webp",
         secondary: [
-            "/images/products/tablets/cytodium-25/s1.jpg",
-            "/images/products/tablets/cytodium-25/s2.jpg"
+            "/images/products/tablets/cytodium-25/s1.webp",
+            "/images/products/tablets/cytodium-25/s2.webp"
         ]
     },
 

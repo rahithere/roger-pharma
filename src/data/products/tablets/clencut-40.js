@@ -4,10 +4,10 @@ export const clencut = {
     name: "CLENCUT-40",
 
     images: {
-        hero: "/images/products/tablets/clencut-40/hero.jpg",
+        hero: "/images/products/tablets/clencut-40/hero.webp",
         secondary: [
-            "/images/products/tablets/clencut-40/s1.jpg",
-            "/images/products/tablets/clencut-40/s2.jpg"
+            "/images/products/tablets/clencut-40/s1.webp",
+            "/images/products/tablets/clencut-40/s2.webp"
         ]
     },
 
