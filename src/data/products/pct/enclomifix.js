@@ -6,10 +6,10 @@ export const enclomifix = {
     images: {
         hero: "/images/products/pct/enclomifix/hero.webp",
         secondary: [
-            "/images/products/pct/enclomifix/s1.jpg",
-            "/images/products/pct/enclomifix/s2.jpg",
-            "/images/products/pct/enclomifix/s3.jpg",
-            "/images/products/pct/enclomifix/s4.jpg"
+            "/images/products/pct/enclomifix/s1.webp",
+            "/images/products/pct/enclomifix/s2.webp",
+            "/images/products/pct/enclomifix/s3.webp",
+            "/images/products/pct/enclomifix/s4.webp"
         ]
     },
 

@@ -5,7 +5,11 @@ export const organCare = {
 
     images: {
         hero: "/images/products/pct/organCare/hero.webp",
-        secondary: ["/images/products/pct/organ-care/s1.jpg", "/images/products/pct/organ-care/s2.jpg"]
+        secondary: [
+            "/images/products/pct/organCare/s1.webp",
+            "/images/products/pct/organCare/s2.webp",
+            "/images/products/pct/organCare/s3.webp",
+            "/images/products/pct/organCare/s4.webp"]
     },
 
     sections: [

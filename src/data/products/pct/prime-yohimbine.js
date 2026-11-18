@@ -5,7 +5,12 @@ export const primeYohimbine = {
 
     images: {
         hero: "/images/products/pct/primeYohimbine/hero.webp",
-        secondary: ["/images/products/pct/primeYohimbine/s1.jpg", "/images/products/pct/primeYohimbine/s2.jpg"]
+        secondary: [
+            "/images/products/pct/primeYohimbine/s1.webp",
+            "/images/products/pct/primeYohimbine/s2.webp",
+            "/images/products/pct/primeYohimbine/s3.webp",
+            "/images/products/pct/primeYohimbine/s4.webp"
+        ]
     },
 
     sections: [

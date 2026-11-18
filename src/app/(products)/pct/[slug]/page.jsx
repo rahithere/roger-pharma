@@ -151,6 +151,28 @@ export default async function ProductPage({ params }) {
 
                 ))}
 
+                {/* Product Images */}
+                {product.images.secondary?.length > 0 && (
+                    <section className="mt-16 md:mt-20">
+                        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:gap-6">
+                            {product.images.secondary.map((image, index) => (
+                                <div
+                                    key={index}
+                                    className="relative aspect-square w-full overflow-hidden"
+                                >
+                                    <Image
+                                        src={image}
+                                        alt={`${product.name} - Image ${index + 1}`}
+                                        fill
+                                        sizes="(max-width: 640px) 100vw, 50vw"
+                                        className="object-contain"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+                )}
+
             </div>
 
         </main>
