@@ -6,8 +6,8 @@ export const acebolone = {
     images: {
         hero: '/images/products/injectables/maxesterone/hero.jpg',
         secondary: [
-            "/images/products/injectables/maxesterone/s1.jpg",
-            "/images/products/injectables/maxesterone/s2.jpg"
+            "/images/products/injectables/acebolone/s1.jpeg",
+            "/images/products/injectables/acebolone/s2.jpg"
         ]
     },
 

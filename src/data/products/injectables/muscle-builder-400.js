@@ -6,8 +6,8 @@ export const muscleBuilder400 = {
     images: {
         hero: "/images/products/injectables/muscleBuilder400/hero.jpg",
         secondary: [
-            "/images/products/injectables/muscleBuilder400/s1.jpg",
-            "/images/products/injectables/muscleBuilder400/s2.jpg"
+            "/images/products/injectables/muscleBuilder400/s1.webp",
+            "/images/products/injectables/muscleBuilder400/s2.webp"
         ]
     },
 

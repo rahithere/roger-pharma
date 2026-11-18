@@ -6,8 +6,8 @@ export const decadrolone = {
     images: {
         hero: "/images/products/injectables/decadrolone/hero.jpg",
         secondary: [
-            "/images/products/injectables/decadrolone/s1.jpg",
-            "/images/products/injectables/decadrolone/s2.jpg"
+            "/images/products/injectables/decadrolone/s1.webp",
+            "/images/products/injectables/decadrolone/s2.webp"
         ]
     },
 

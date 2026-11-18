@@ -6,8 +6,8 @@ export const cypiosterone = {
     images: {
         hero: '/images/products/injectables/cypiosterone/hero.jpeg',
         secondary: [
-            "/images/products/injectables/cypiosterone/s1.jpg",
-            "/images/products/injectables/cypiosterone/s2.jpg"
+            "/images/products/injectables/cypiosterone/s1.webp",
+            "/images/products/injectables/cypiosterone/s2.webp"
         ]
     },
 

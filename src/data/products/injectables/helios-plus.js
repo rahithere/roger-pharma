@@ -6,8 +6,8 @@ export const heliosPlus = {
     images: {
         hero: "/images/products/injectables/heliosPlus/hero.jpg",
         secondary: [
-            "/images/products/injectables/heliosPlus/s1.jpg",
-            "/images/products/injectables/heliosPlus/s2.jpg"
+            "/images/products/injectables/heliosPlus/s1.webp",
+            "/images/products/injectables/heliosPlus/s2.webp"
         ]
     },
 

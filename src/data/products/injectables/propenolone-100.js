@@ -6,8 +6,8 @@ export const propenolone = {
     images: {
         hero: "/images/products/injectables/propenolone/hero.jpg",
         secondary: [
-            "/images/products/injectables/propenolone/s1.jpg",
-            "/images/products/injectables/propenolone/s2.jpg"
+            "/images/products/injectables/propenolone/s1.webp",
+            "/images/products/injectables/propenolone/s2.webp"
         ]
     },
 

@@ -6,8 +6,8 @@ export const undecylenone400 = {
     images: {
         hero: "/images/products/injectables/undecylenone400/hero.jpg",
         secondary: [
-            "/images/products/injectables/undecylenone400/s1.jpg",
-            "/images/products/injectables/undecylenone400/s2.jpg"
+            "/images/products/injectables/undecylenone400/s1.webp",
+            "/images/products/injectables/undecylenone400/s2.webp"
         ]
     },
 

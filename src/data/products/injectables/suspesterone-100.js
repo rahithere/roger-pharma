@@ -6,8 +6,8 @@ export const suspesterone = {
     images: {
         hero: "/images/products/injectables/suspesterone/hero.jpg",
         secondary: [
-            "/images/products/injectables/suspesterone/s1.jpg",
-            "/images/products/injectables/suspesterone/s2.jpg"
+            "/images/products/injectables/suspesterone/s1.webp",
+            "/images/products/injectables/suspesterone/s2.webp"
         ]
     },
 

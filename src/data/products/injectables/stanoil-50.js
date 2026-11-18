@@ -6,8 +6,8 @@ export const stanoil = {
     images: {
         hero: "/images/products/injectables/stanoil/hero.png",
         secondary: [
-            "/images/products/injectables/stanoil/s1.png",
-            "/images/products/injectables/stanoil/s2.png"
+            "/images/products/injectables/stanoil/s1.webp",
+            "/images/products/injectables/stanoil/s2.webp"
         ]
     },
 

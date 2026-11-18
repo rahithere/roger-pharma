@@ -4,10 +4,10 @@ export const trimForge400 = {
     name: "TRIM FORGE-400",
 
     images: {
-        hero: "",
+        hero: "/images/products/injectables/trimForge400/s1.webp",
         secondary: [
-            "",
-            ""
+            "/images/products/injectables/trimForge400/s1.webp",
+            "/images/products/injectables/trimForge400/s2.webp"
         ]
     },
 

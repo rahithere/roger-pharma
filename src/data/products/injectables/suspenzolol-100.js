@@ -6,8 +6,8 @@ export const suspenzolol = {
     images: {
         hero: "/images/products/injectables/suspenzolol/hero.jpg",
         secondary: [
-            "/images/products/injectables/suspenzolol/s1.jpg",
-            "/images/products/injectables/suspenzolol/s2.jpg"
+            "/images/products/injectables/suspenzolol/s1.webp",
+            "/images/products/injectables/suspenzolol/s2.webp"
         ]
     },
 

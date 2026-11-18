@@ -6,8 +6,8 @@ export const lipoCardiacHelp = {
     images: {
         hero: "/images/products/injectables/lipoCardiacHelp/hero.jpg",
         secondary: [
-            "/images/products/injectables/lipoCardiacHelp/s1.jpg",
-            "/images/products/injectables/lipoCardiacHelp/s2.jpg"
+            "/images/products/injectables/lipoCardiacHelp/s1.webp",
+            "/images/products/injectables/lipoCardiacHelp/s2.webp"
         ]
     },
 

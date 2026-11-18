@@ -6,8 +6,8 @@ export const maxesterone250 = {
     images: {
         hero: "/images/products/injectables/maxesterone250/hero.jpg",
         secondary: [
-            "/images/products/injectables/maxesterone250/s1.jpg",
-            "/images/products/injectables/maxesterone250/s2.jpg"
+            "/images/products/injectables/maxesterone250/s1.webp",
+            "/images/products/injectables/maxesterone250/s2.webp"
         ]
     },
 

@@ -6,8 +6,8 @@ export const phenprodrolone = {
     images: {
         hero: "/images/products/injectables/phenprodrolone/hero.jpg",
         secondary: [
-            "/images/products/injectables/phenprodrolone/s1.jpg",
-            "/images/products/injectables/phenprodrolone/s2.jpg"
+            "/images/products/injectables/phenprodrolone/s1.webp",
+            "/images/products/injectables/phenprodrolone/s2.webp"
         ]
     },
 

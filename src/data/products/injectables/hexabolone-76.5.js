@@ -6,8 +6,8 @@ export const hexabolone = {
     images: {
         hero: "/images/products/injectables/hexabolone/hero.png",
         secondary: [
-            "/images/products/injectables/hexabolone/s1.jpg",
-            "/images/products/injectables/hexabolone/s2.jpg"
+            "/images/products/injectables/hexabolone/s1.webp",
+            "/images/products/injectables/hexabolone/s2.webp"
         ]
     },
 

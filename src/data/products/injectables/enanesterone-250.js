@@ -6,8 +6,8 @@ export const enanesterone = {
     images: {
         hero: "/images/products/injectables/enanesterone/hero.png",
         secondary: [
-            "/images/products/injectables/enanesterone/s1.png",
-            "/images/products/injectables/enanesterone/s2.png"
+            "/images/products/injectables/enanesterone/s1.webp",
+            "/images/products/injectables/enanesterone/s2.webp"
         ]
     },
 

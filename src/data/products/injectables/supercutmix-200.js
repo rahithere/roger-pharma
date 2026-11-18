@@ -6,8 +6,8 @@ export const supercutmix = {
     images: {
         hero: "/images/products/injectables/supercutmix/hero.jpg",
         secondary: [
-            "/images/products/injectables/supercutmix/s1.jpg",
-            "/images/products/injectables/supercutmix/s2.jpg"
+            "/images/products/injectables/supercutmix/s1.webp",
+            "/images/products/injectables/supercutmix/s2.webp"
         ]
     },
 

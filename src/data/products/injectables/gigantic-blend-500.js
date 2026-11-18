@@ -6,8 +6,8 @@ export const giganticBlend = {
     images: {
         hero: "/images/products/injectables/giganticBlend/hero.png",
         secondary: [
-            "/images/products/injectables/giganticBlend/s1.png",
-            "/images/products/injectables/giganticBlend/s2.png"
+            "/images/products/injectables/giganticBlend/s1.webp",
+            "/images/products/injectables/giganticBlend/s2.webp"
         ]
     },
 
