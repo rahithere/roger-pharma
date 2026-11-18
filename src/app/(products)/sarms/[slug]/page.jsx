@@ -95,17 +95,21 @@ export default async function ProductPage({ params }) {
                             </>
                         )}
 
-                        {/* LAST TWO IMAGES AFTER BENEFITS */}
-                        {section.title?.toLowerCase().includes("benefit") && (
-                            <div className="mt-12">
-                                <ProductImageGrid
-                                    images={secondaryImages.slice(2, 4)}
-                                    productName={product.name}
-                                />
-                            </div>
-                        )}
+
                     </section>
                 ))}
+
+                <section className="mb-16 md:mb-20">
+                    {/* LAST TWO IMAGES AFTER BENEFITS */}
+                    {secondaryImages.length > 0 && (
+                        <section className="mb-16 md:mb-20">
+                            <ProductImageGrid
+                                images={secondaryImages.slice(2, 4)}
+                                productName={product.name}
+                            />
+                        </section>
+                    )}
+                </section>
 
             </div>
         </main>
