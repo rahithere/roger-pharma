@@ -163,7 +163,7 @@ export default function page() {
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
 
-                        {injectables.map((product) => (
+                        {peptides.map((product) => (
                             <Link
                                 key={product.name}
                                 href={`/peptides/${product.slug}`}
@@ -197,7 +197,7 @@ export default function page() {
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
 
-                        {injectables.map((product) => (
+                        {oralPeptides.map((product) => (
                             <Link
                                 key={product.name}
                                 href={`/oral-peptides/${product.slug}`}
