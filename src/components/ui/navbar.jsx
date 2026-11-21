@@ -9,6 +9,7 @@ import { useState } from "react";
 
 
 const products = [
+    { name: "All Products", href: "/products" },
     { name: "Injectables", href: "/injectables" },
     { name: "Tablets", href: "/tablets" },
     { name: "PCT & Hormone Support", href: "/pct" },
